@@ -358,13 +358,74 @@ footer {
   cursor: pointer;    
 }
 
+.postarCardapio{
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  left: 15%;
+  top: 60px;  
+  
+}
+.postarCardapio h1{
+  padding-top: 40px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 56px;
+  color: #666B69;
+  margin-left: 5%;
+}
 
+.postarCardapio h4{
+  padding-top: 50px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 56px;
+  color: #666B69;
+}
+.postarCardapio form{   
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #666B69;
+  font-size: 18px;  
+   
+}
 
-
+.postarCardapio textarea{
+  margin-top: 5px;
+  box-sizing: border-box;
+  background: #D9D9D9;
+  border: 2px solid #666B69;
+  border-radius: 30px;
+  height: 40px;
+  outline: none;
+  color: #666B69;;
+  padding-left: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  
+  
+}
+.bnt_postar{
+  background: linear-gradient(90deg, #0BA360 0%, #3CBA92 100%);
+  box-shadow: 4px 9px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  outline: none;
+  border: 2px solid #fff;
+  width: 200px;
+  height: 40px;
+  padding: 5px;
+  margin-left: 15%;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;  
+  margin-top: 80px;  
+}
 
 /*Smartphone Landscape resoluções superiores a 576px >>>>>>>>>>>>>>>>*/
 /*Tablet Portrait >>>>>>>>>>>>>>>>>>>>>*/
-@media (min-width: 768px) {
+@media (min-width: 736px) {
   .area-login .login {
     border: 2px solid #FEFDFD;
     border-radius: 30px;
@@ -427,6 +488,34 @@ footer {
   footer {
     padding-left: 15px;
   }
+
+  .postarCardapio{
+    position: fixed;
+    width: 500px;
+    height: 600px;
+    left: 126px;
+  }
+  .postarCardapio h1{
+      padding-top: 80px;
+      font-size: 36px;
+  }
+
+  .postarCardapio h4{
+      padding-top: 20px;
+      font-size: 42px;
+  }
+  .postarCardapio form{   
+      padding-top: 60px; 
+      
+  }
+
+  .postarCardapio textarea{
+      height: 70px; 
+  }
+  .bnt_postar{
+      margin-left: 30%;
+      font-size: 18px;
+  }
   /*Tablet Landscape >>>>>>>>>>>>>>>>>>>>*/
   /*PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 }
@@ -447,6 +536,42 @@ footer {
   footer {
     margin-bottom: 10px;
   }
+  .box_menu .sidebar_menu {
+    left: 0;
+  }
+  .bnt_close {
+      display: none;
+  }
+
+  .postarCardapio{
+    position: fixed;
+    width: 500px;
+    height: 600px;
+    left: 420px;
+  }
+  .postarCardapio h1{
+      padding-top: 20px;
+      font-size: 36px;
+  }
+
+  .postarCardapio h4{
+      padding-top: 20px;
+      font-size: 42px;
+  }
+  .postarCardapio form{   
+      padding-top: 60px; 
+      
+  }
+
+  .postarCardapio textarea{
+      height: 70px; 
+  }
+  .bnt_postar{
+      margin-left: 30%;
+      font-size: 18px;
+  }
+
+  
 
 }
 @media (min-width: 768px) and (min-width: 1200px) {
@@ -471,11 +596,32 @@ footer {
     transform: translate(-50%, 50%);
   }
 
-  .box_menu .sidebar_menu {
-    left: 0;
+  .postarCardapio{
+    position: absolute;
+    width: 647px;
+    height: 732px;
+    left: 420px;
   }
-  .bnt_close {
-      display: none;
+  .postarCardapio h1{
+      padding-top: 20px;
+      font-size: 42px;
+  }
+
+  .postarCardapio h4{
+      padding-top: 20px;
+      font-size: 42px;
+  }
+  .postarCardapio form{   
+      padding-top: 100px; 
+      
+  }
+
+  .postarCardapio textarea{
+      height: 70px; 
+  }
+  .bnt_postar{
+      margin-left: 225px;
+      font-size: 18px;
   }
 
 }/*# sourceMappingURL=style.css.map */
