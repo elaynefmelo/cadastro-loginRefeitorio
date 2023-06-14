@@ -254,6 +254,114 @@ footer {
   padding-bottom: 10px;
 }
 
+.box_menu .sidebar_menu{
+  height: 100vh;
+  width: 350px;
+  background: linear-gradient(90deg, #0BA360 0%, #3CBA92 100%);;
+  position: fixed;
+  overflow: hidden;
+  left: -350px; /*faz a div sidebar desaparecer*/
+  transition: all 0.3s linear;
+  
+}
+.box_menu .sidebar_img{
+  position: absolute;
+  height: 60px;
+  width: 100%; 
+  padding-left: 40px;
+ 
+}
+.box_menu .sidebar_img img{
+  padding-top: 15px;
+  width: 280px;
+  height: auto;
+}
+.box_menu .sidebar_titulo a{
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  position: absolute;
+  left: 20px;
+  line-height: 60px;
+}
+.sidebar_menu .menu{
+  position: absolute;
+  top: 300px;
+  width: 100%;
+  margin-left: -10px;
+}
+.sidebar_menu .menu ul{
+  padding-top: 15px;
+  padding-bottom: 50px;
+  padding-left: 40px;
+}
+.sidebar_menu .menu li{
+  margin: 15px;
+  padding: 10px;
+  border-radius: 30px;
+  transition: 0.3s;
+  
+}
+.sidebar_menu .menu li:hover{
+  background-color:rgba(218, 215, 215, 0.509);
+  
+}
+.sidebar_menu .menu i{
+  color: #FFF;
+  font-size: 20px;
+  padding-right: 8px;
+}
+.sidebar_menu .menu a{
+  color:#FFF;
+  text-decoration: none;
+  font-size: 20px;
+}
+#check{
+  display: none;
+}
+
+.box_menu .menu-icon i{
+  color: #666B69;
+  font-size: 40px;
+  font-weight: 700;
+  position: absolute;
+  left: 16px;
+  line-height: 60px;
+  cursor: pointer;
+  padding-top: 5px;
+}
+.sidebar_menu .bnt_close{
+  font-size: 25px;
+  line-height: 60px;
+  position: absolute;
+  left: 310px;
+  color: #FFF;
+  cursor: pointer;
+
+}
+#check:checked ~ .sidebar_menu {
+  left: 0;
+}
+.bnt_sair{
+  background: linear-gradient(90deg, #0BA360 0%, #3CBA92 100%);
+  box-shadow: 4px 9px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  outline: none;
+  border: 2px solid #FFFFFF;
+  width: 50%;
+  height: 35px;
+  padding: 5px;
+  margin-left: 90px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;    
+}
+
+
+
+
+
 /*Smartphone Landscape resoluções superiores a 576px >>>>>>>>>>>>>>>>*/
 /*Tablet Portrait >>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 768px) {
@@ -339,6 +447,7 @@ footer {
   footer {
     margin-bottom: 10px;
   }
+
 }
 @media (min-width: 768px) and (min-width: 1200px) {
   .area-login {
@@ -361,4 +470,12 @@ footer {
     left: 50%;
     transform: translate(-50%, 50%);
   }
+
+  .box_menu .sidebar_menu {
+    left: 0;
+  }
+  .bnt_close {
+      display: none;
+  }
+
 }/*# sourceMappingURL=style.css.map */
