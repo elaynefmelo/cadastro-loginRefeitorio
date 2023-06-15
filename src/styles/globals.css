@@ -612,7 +612,7 @@ footer {
       font-size: 42px;
   }
   .postarCardapio form{   
-      padding-top: 100px; 
+      padding-top: 50px; 
       
   }
 
@@ -620,6 +620,7 @@ footer {
       height: 70px; 
   }
   .bnt_postar{
+    margin-top: 50px;
       margin-left: 225px;
       font-size: 18px;
   }

@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from "next/link";
 
-function Menu() {
+function MenuAluno() {
 return (
   <>
   
@@ -27,15 +27,15 @@ return (
       <ul style={{ listStyle: "none" }}>
         <li>
           <i className="fa-solid fa-utensils" />
-          <Link href="/PostarCardapio"> Postar Cardapio</Link>
+          <Link href="/#"> Formulário Refeições</Link>
         </li>
         <li>
           <i className="fas fa-qrcode" />
-          <Link href="/ConsultarInformacoes"> Consultar Informações</Link>
+          <Link href="/#"> Visualizar Cardápio</Link>
         </li>
         <li>
           <i className="fa-solid fa-gear" />
-          <Link href="/Configuracoes"> Configurações</Link>
+          <Link href="/ConfiguracoesAluno"> Configurações</Link>
         </li>
       </ul>
       <button className="bnt_sair" type="submit">
@@ -50,5 +50,4 @@ return (
 );
 }
 
-export default Menu;
-
+export default MenuAluno;

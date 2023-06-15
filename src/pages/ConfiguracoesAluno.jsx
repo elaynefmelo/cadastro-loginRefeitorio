@@ -1,6 +1,6 @@
-import Menu from "./Menu";
+import MenuAluno from "./MenuAluno";
 
-function Configuracoes() {
+function ConfiguracoesAluno() {
     return (
         <>
         <div className="container">
@@ -10,14 +10,8 @@ function Configuracoes() {
                 Nome <br />
                 <textarea name="cafeManha" defaultValue={""} />
                 <br />
-                E-mail <br />
+                Contato de Emergência <br />
                 <textarea name="almoco" defaultValue={""} />
-                <br />
-                Senha <br />
-                <textarea name="cafeManha" defaultValue={""} />
-                <br />
-                Confirmar Senha <br />
-                <textarea name="cafeManha" defaultValue={""} />
                 <br />
                 <button className="bnt_postar" type="submit" name="sub">
                     Confirmar alterações
@@ -26,11 +20,11 @@ function Configuracoes() {
             </section>
         </div>
         <div>
-        < Menu /> 
+        < MenuAluno /> 
         </div>
          
         </>
     );
 }
 
-export default Configuracoes;
+export default ConfiguracoesAluno;
